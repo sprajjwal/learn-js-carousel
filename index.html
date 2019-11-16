@@ -4,8 +4,7 @@
         <title>Carousel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-
+        <link rel="stylesheet" href="ms-slide-show.css">
         <style>
             /* CSS */
             /* Dev styles */
@@ -16,20 +15,18 @@
                 margin:auto;
             }
 
-            /* Slide show styles*/
-            .slides-inner {
-                display: flex;
-                flex-direction: row;
+            #slides-2 {
+                width: 300px;
+                height: 169px;
             }
-            .slide-show {
-                overflow: hidden;
-            }
+
+            
         </style>
     </head>
     <body>
     
         <!-- HTML -->
-        <div id="slides" class="slide-show">
+        <div id="slides" class="slide-show ms-slide-show" data-delay="4500" data-transition="400">
             <div class="slides-inner">
                 <img src="images/bee-1200-400.jpg" width="1200px" height="400px" alt="bee">
                 <img src="images/beetle-1200-400.jpg" width="1200px" height="400px" alt="beetle">
@@ -37,9 +34,17 @@
                 <img src="images/ladybug-1200-400.jpg" width="1200px" height="400px" alt="ladybug">
             </div>
         </div>
-        <script>
-            // JS 
 
-        </script>
+        <div id="slides-2" class="slide-show ms-slide-show", data-delay="3000" data-transition="2000">
+            <div class="slides-inner">
+                <img src="images/hellebore-pollen-300-169.jpg" width="300" height="169" alt="hellbore">
+                <img src="images/li-pollen-300-169.jpg" width="300" height="169" alt="li pollen">
+                <img src="images/pollen-300-169.jpg" width="300" height="169" alt="pollen">
+                <img src="images/spores-300-169.jpg" width="300" height="169" alt="spores">
+                <img src="images/zsa-300-169.jpg" width="300" height="169" alt="zsa">
+
+            </div>
+        </div>
+        <script src="ms-slide-show.js"></script>
     </body>
 </html>
